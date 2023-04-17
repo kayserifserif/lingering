@@ -1,7 +1,6 @@
 import { ProsePlay } from "proseplay";
 
-const lines = document.querySelectorAll(".line") as NodeListOf<HTMLElement>,
-  initials = document.querySelectorAll(".initial") as NodeListOf<HTMLElement>,
+const initials = document.querySelectorAll(".initial") as NodeListOf<HTMLElement>,
   echoes = document.querySelectorAll(".echo") as NodeListOf<HTMLElement>,
   ppEchoes: ProsePlay[] = [];
 
