@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lingering</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div class="text">
+      <div class="line initial" id="line-1-1">good morning</div>
+      <div class="line echo" id="line-1-2">(good morning|good)</div>
+      <div class="line echo" id="line-1-3">(good morning|good)</div>
+      <div class="line initial" id="line-2-1">i love you</div>
+      <div class="line echo" id="line-2-2">(i love you|&nbsp;&nbsp;love)</div>
+      <div class="line echo" id="line-2-3">(i love you|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you)</div>
+      <div class="line initial" id="line-3-1">i think i'll be doing some art today</div>
+      <div class="line echo" id="line-3-2">(i think i'll be doing some art today|i)</div>
+      <div class="line echo" id="line-3-3">(i think i'll be doing some art today|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;be)</div>
+      <div class="line echo" id="line-3-4">(i think i'll be doing some art today|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;art)</div>
+      <div class="line initial" id="line-4-1">let me make the coffee</div>
+      <div class="line echo" id="line-4-2">(let me make the coffee|let)</div>
+      <div class="line echo" id="line-4-3">(let me make the coffee|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the)</div>
+      <div class="line initial" id="line-5-1">this life is composed of new springs</div>
+      <div class="line echo" id="line-5-2">(this life is composed of new springs|this life)</div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
